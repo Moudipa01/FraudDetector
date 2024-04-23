@@ -1,18 +1,4 @@
-<div align="center">
-
-  ![AuthentiFi](https://imgur.com/1xXwOoZ.png)
-
-  [![Hackathon](https://img.shields.io/badge/hackathon-SPIT-orange.svg)](http://csi.spit.ac.in/hackathon/) 
-  [![Status](https://img.shields.io/badge/status-inactive-red.svg)]() 
-  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/AuthentiFi.svg)](https://github.com/kylelobo/AuthentiFi/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/AuthentiFi.svg)](https://github.com/kylelobo/AuthentiFi/pulls)
-  [![License](https://img.shields.io/badge/license-GNU-blue.svg)](LICENSE.md)
-
-</div>
-
----
-
-<p align="center">A blockchain-based Product Ownership Management System for anti-counterfeits in the Post Supply Chain.</p>
+# A blockchain-based Product Management System for detecting fraud in the Post Supply Chain.</p>
 
 # Table of Contents
 + [About](#description)
@@ -21,17 +7,12 @@
 + [Limitations](#limitations)
 + [Future Scope](#future_scope)
 + [Contributing](#contributing)
-+ [Authors](#authors)
-+ [Acknowledgements](#acknowledgements)
 
 ## About <a name="description"></a>
 + In today’s world, how do you know if you are buying a genuine product?
 + For more than a decade now, RFID (Radio Frequency IDentification) technology has been quite effective in providing anti-counterfeits measures in the supply chain.
 + We leverage the idea of Bitcoin’s blockchain that anyone can check the proof of possession of balance. Along with this, we plan to use QR codes.
 + We plan to implement a proof-of-concept system employing a blockchain-based decentralized application which gives a customer the entire history of a product (eg - brand info, owner, etc).
-
-### Data Flow
-![Data Flow](https://imgur.com/VGIPtDU.png)
 
 ### Why blockchain? <a name="why_blockchain"></a>
 + Unlike a normal database, Blockchain has a non-destructive (immutable) way to track data changes over time. This means that data is not editable rather, whenever updates are made, a new block is added to the “block-chain”. This helps track historical data (authenticity and owner data) of a product.
@@ -56,7 +37,7 @@ A step by step series of examples that tell you how to get a development env run
 
 Cloning the repo
 ```
-$ git clone https://github.com/kylelobo/AuthentiFi.git
+$ git clone https://github.com/Moudipa01/FraudDetector.git
 ```
 Installing the dependencies
 ```
@@ -79,18 +60,6 @@ geth --datadir ./myDataDir init ./myGenesis.json
 + Networkid helps ensure the privacy of your network. You can use any number here (where we used “1114”), but other peers joining your network must use the same one.
 ```
 geth --datadir ./myDataDir --networkid 1114 console 2>> myEth.log
-```
-+ Output should look like this:
-```
-Welcome to the Geth JavaScript console!
-
-instance: Geth/v1.7.3-stable-4bb3c89d/darwin-amd64/go1.8.3
-coinbase: 0xae13d41d66af28380c7af6d825ab557eb271ffff
-at block: 5 (Thu, 07 Dec 2017 17:08:48 PST)
-datadir: /Users/test/my-eth-chain/myDataDir
-modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
-
->
 ```
 This is the geth JavaScript console. Any command with the symbol > should be typed here.
 
@@ -167,19 +136,4 @@ Website:
 + Implement our own tokens which can be sold to users so that they can purchase ownership of a product using tokens which helps in insurance processing. 
 
 ## Contributing <a name="contributing"></a>
-1. Fork it (<https://github.com/kylelobo/AuthentiFi/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
-
-## Authors <a name="authors"></a>
-+ [Calden Rodrigues](https://github.com/caldenrodrigues) <br>
-+ [JohnAnand Abraham](https://github.com/johnanand) <br>
-+ [Kyle Lobo](https://github.com/kylelobo) <br>
-+ [Pratik Nerurkar](https://github.com/PlayPratz) <br>
-
-See also the list of [contributors](https://github.com/kylelobo/AuthentiFi/contributors) who participated in this project.
-
-## Acknowledgements <a name="acknowledgements"></a>
-[How To: Create Your Own Private Ethereum Blockchain](https://medium.com/mercuryprotocol/how-to-create-your-own-private-ethereum-blockchain-dad6af82fc9f) - _Mercury Protocol_
+1. Fork it https://github.com/Moudipa01/FraudDetector.git
